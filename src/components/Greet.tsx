@@ -7,10 +7,13 @@ export const Greet = (props: GreetProps) => {
     return (
         <div>
             {
-                props.isLoggedIn &&
+                props.isLoggedIn ?
                 <>
                     <h2>Hello its {props.name} and im {props.messageCount}</h2>
 
+                </>:
+                <>
+                <h2>hey</h2>
                 </>
 
             }
