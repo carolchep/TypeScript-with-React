@@ -5,7 +5,7 @@ import { Greet } from './components/Greet';
 function App() {
   return (
     <div className="App">
-     <Greet name ="carol" age={10}/>
+     <Greet name ="carol" messageCount={10}/>
     </div>
   );
 }
