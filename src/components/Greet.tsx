@@ -1,11 +1,22 @@
-type GreetProps={
-    name:string
-    age:number
+type GreetProps = {
+    name: string
+    messageCount: number
+    isLoggedIn: boolean
 }
-export const Greet =(props:GreetProps)=>{
-    return(
+export const Greet = (props: GreetProps) => {
+    return (
         <div>
-            <h2>Hello its {props.name} and im {props.age}</h2>
+            {
+                props.isLoggedIn ?
+                <>
+                    <h2>Hello its {props.name} and im {props.messageCount}</h2>
+
+                </>:
+                <>
+                <h2>hey</h2>
+                </>
+
+            }
         </div>
     )
 }
