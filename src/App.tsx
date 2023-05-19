@@ -3,6 +3,7 @@ import './App.css';
 import { Greet } from './components/Greet';
 import { Person } from './components/Person'
 import { PersonList } from './components/PersonList';
+import { Status } from './components/Status';
 
 function App() {
   const personName ={
@@ -29,6 +30,7 @@ function App() {
       <Greet name="carol" messageCount={10} isLoggedIn={false} />
       <Person name={personName}/>
       <PersonList names={personList}/>
+      <Status status="error"/>
     </div>
   );
 }
