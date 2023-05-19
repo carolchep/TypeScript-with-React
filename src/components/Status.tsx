@@ -1,5 +1,5 @@
 type StatusProps = {
-    status: string
+    status: 'loading' | 'error ' | 'success '
 }
 
 export const Status = (props: StatusProps) => {
@@ -15,11 +15,11 @@ export const Status = (props: StatusProps) => {
 
     }
 
-return (
-    <div>
-        <h2>
-            Status- {message}
-        </h2>
-    </div>
-)
+    return (
+        <div>
+            <h2>
+                Status- {message}
+            </h2>
+        </div>
+    )
 }
