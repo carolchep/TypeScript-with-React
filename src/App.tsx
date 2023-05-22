@@ -32,8 +32,8 @@ function App() {
       <Person name={personName}/>
       <PersonList names={personList}/>
       <Status status="error"/>
-      <Button handleClick={()=>{
-        console.log('Buttton clicked')
+      <Button handleClick={(event,id)=>{
+        console.log('Buttton clicked',event,id)
       }}/>
     </div>
   );
