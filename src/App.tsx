@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Button } from './components/Button';
 import { Greet } from './components/Greet';
 import { Person } from './components/Person'
 import { PersonList } from './components/PersonList';
@@ -31,6 +32,9 @@ function App() {
       <Person name={personName}/>
       <PersonList names={personList}/>
       <Status status="error"/>
+      <Button handleClick={()=>{
+        console.log('Buttton clicked')
+      }}/>
     </div>
   );
 }
