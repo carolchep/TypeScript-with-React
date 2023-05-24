@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Button } from './components/Button';
+import { Container } from './components/Container';
 import { Greet } from './components/Greet';
 import { Person } from './components/Person'
 import { PersonList } from './components/PersonList';
@@ -35,6 +36,7 @@ function App() {
       <Button handleClick={(event,id)=>{
         console.log('Buttton clicked',event,id)
       }}/>
+      <Container styles={{border:'1px solid black',padding :'1rem'}}/>
     </div>
   );
 }
