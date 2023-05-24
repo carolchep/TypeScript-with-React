@@ -4,10 +4,10 @@ type PersonProps = {
         last: string
     }
 }
-export const Person = (props: PersonProps) => {
+export const Person = ({name}: PersonProps) => {
     return (
         <div>
-            {props.name.last}and {props.name.first}
+            {name.last}and {name.first}
         </div>
     )
 }
