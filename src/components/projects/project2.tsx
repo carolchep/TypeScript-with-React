@@ -30,13 +30,13 @@ const App: React.FC = () => {
     setInputValue('');
   };
 
-  const handleToggleTask = (taskId: number) => {
-    setTasks((prevTasks) =>
-      prevTasks.map((task) =>
-        task.id === taskId ? { ...task, completed: !task.completed } : task
-      )
-    );
-  };
+  // const handleToggleTask = (taskId: number) => {
+  //   setTasks((prevTasks) =>
+  //     prevTasks.map((task) =>
+  //       task.id === taskId ? { ...task, completed: !task.completed } : task
+  //     )
+  //   );
+  // };
 
   const handleDeleteTask = (taskId: number) => {
     setTasks(tasks.filter((task) => task.id !== taskId));
